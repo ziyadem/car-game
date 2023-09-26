@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+body #yol {
+  width: 1000px;
+  height: 3400px;
+  display: block;
+  background-image: url(./img/yollar.png);
+  background-repeat: repeat-y;
+  -webkit-animation: highway 5s linear infinite;
+          animation: highway 5s linear infinite;
+  position: relative;
+}
+
+@-webkit-keyframes highway {
+  100% {
+    transform: translateY(-2500px);
+  }
+}
+
+@keyframes highway {
+  100% {
+    transform: translateY(-2500px);
+  }
+}
+.red-car {
+  position: absolute;
+  width: 150px;
+  bottom: 0;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    #yol{
+        width: 1000px;
+        height: 3400px;
+        display: block;
+        background-image: url(./img/yollar.png);
+        background-repeat: repeat-y;
+        animation: highway 5s linear infinite;
+        position: relative;
+    }
+
+}
+@keyframes highway {
+    100%{
+        transform: translateY(-2500px);
+    }
+}
+.red-car{
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+    // margin-right: 200px;
+}
